@@ -1,3 +1,5 @@
+package me.swrobbins;
+
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
 import java.text.DecimalFormat;
@@ -42,7 +44,7 @@ public class OutOfMemoryExamples {
     public static void main(String[] args) {
         OutOfMemoryExamples oome = new OutOfMemoryExamples();
         oome.showMemory();
-        int arraySize = (1021 * 1024 * 1024);
+        int arraySize = (1024 * 1024 * 1024);
         oome.createLargeArrayWithCatch(arraySize);
         oome.createLargeArray( arraySize);
     }
